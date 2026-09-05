@@ -18,235 +18,693 @@
 
     <title>Privacy Policy - JSON Studio</title>
 
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* =========================
+           BODY
+        ========================== */
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            color: #334155;
+            background: #f8fafc;
+
+            line-height: 1.7;
+
+            padding: 40px 20px;
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================== */
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            background: #ffffff;
+
+            border: 1px solid #e2e8f0;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 15px 40px rgba(15, 23, 42, 0.07);
+
+            overflow: hidden;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        .header {
+            padding: 45px 50px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eff6ff,
+                    #f8fafc
+                );
+
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .header h1 {
+            color: #0f172a;
+
+            font-size: 38px;
+
+            line-height: 1.2;
+
+            letter-spacing: -1px;
+
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            color: #64748b;
+
+            font-size: 15px;
+
+            margin-top: 5px;
+        }
+
+        .header strong {
+            color: #334155;
+        }
+
+
+        /* =========================
+           CONTENT
+        ========================== */
+
+        .content {
+            padding: 45px 50px;
+        }
+
+
+        /* =========================
+           INTRODUCTION
+        ========================== */
+
+        .intro {
+            margin-bottom: 40px;
+
+            padding: 22px 25px;
+
+            background: #f8fafc;
+
+            border-left: 4px solid #2563eb;
+
+            border-radius: 8px;
+        }
+
+        .intro p {
+            margin-bottom: 12px;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           HEADINGS
+        ========================== */
+
+        h2 {
+            color: #0f172a;
+
+            font-size: 24px;
+
+            line-height: 1.3;
+
+            margin-top: 40px;
+
+            margin-bottom: 16px;
+
+            letter-spacing: -0.3px;
+        }
+
+
+        /* =========================
+           PARAGRAPHS
+        ========================== */
+
+        p {
+            margin-bottom: 18px;
+        }
+
+
+        /* =========================
+           LISTS
+        ========================== */
+
+        ul {
+            margin: 10px 0 22px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+
+            padding-left: 5px;
+        }
+
+        li::marker {
+            color: #2563eb;
+        }
+
+
+        /* =========================
+           LINKS
+        ========================== */
+
+        a {
+            color: #2563eb;
+
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-box {
+            margin-top: 25px;
+
+            padding: 25px;
+
+            background: #eff6ff;
+
+            border: 1px solid #dbeafe;
+
+            border-radius: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           DEVELOPER INFO
+        ========================== */
+
+        .developer-box {
+            margin-top: 25px;
+
+            padding: 25px;
+
+            background: #f8fafc;
+
+            border: 1px solid #e2e8f0;
+
+            border-radius: 12px;
+        }
+
+        .developer-box p {
+            margin-bottom: 8px;
+        }
+
+        .developer-box p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        .footer {
+            padding: 25px 50px;
+
+            text-align: center;
+
+            color: #94a3b8;
+
+            font-size: 14px;
+
+            background: #f8fafc;
+
+            border-top: 1px solid #e2e8f0;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                border-radius: 14px;
+            }
+
+            .header {
+                padding: 30px 25px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .content {
+                padding: 30px 25px;
+            }
+
+            h2 {
+                font-size: 22px;
+
+                margin-top: 35px;
+            }
+
+            .intro {
+                padding: 18px 20px;
+            }
+
+            .contact-box,
+            .developer-box {
+                padding: 20px;
+            }
+
+            .footer {
+                padding: 22px 25px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
 <body>
 
-    <h1>Privacy Policy – JSON Studio</h1>
 
-    <p>
-        <strong>Effective Date:</strong> September 5, 2026
-    </p>
-
-    <p>
-        <strong>Last Updated:</strong> September 5, 2026
-    </p>
+    <div class="container">
 
 
-    <p>
-        This Privacy Policy applies specifically to the
-        <strong>JSON Studio - View Edit Export</strong> Android
-        application developed by <strong>VenzApps</strong>.
-    </p>
+        <!-- HEADER -->
 
-    <p>
-        Your privacy is important to us. This Privacy Policy explains
-        what information JSON Studio handles, how it is used, and how
-        your data is protected when you use the application.
-    </p>
+        <header class="header">
 
+            <h1>
+                Privacy Policy – JSON Studio
+            </h1>
 
-    <h2>1. Information We Collect</h2>
+            <p>
+                <strong>Effective Date:</strong>
+                September 5, 2026
+            </p>
 
-    <p>
-        JSON Studio does not require you to create an account or sign in.
-        The application does not directly collect personal information
-        such as your name, phone number, address, or contact details.
-    </p>
+            <p>
+                <strong>Last Updated:</strong>
+                September 5, 2026
+            </p>
 
-    <p>
-        JSON files you open, create, edit, or process in JSON Studio
-        are processed locally on your Android device. Your JSON files
-        are not uploaded to our servers.
-    </p>
+        </header>
 
 
-    <h2>2. Local App Data</h2>
+        <!-- CONTENT -->
 
-    <p>
-        JSON Studio may store certain information locally on your device
-        to provide its features.
-    </p>
-
-    <p>This may include:</p>
-
-    <ul>
-        <li>Names of recently opened files</li>
-        <li>File URIs required to access recently used files</li>
-        <li>Pasted JSON content stored in the application's private storage until cleared</li>
-    </ul>
-
-    <p>
-        This information is stored locally on your device and is not
-        uploaded to VenzApps servers.
-    </p>
+        <main class="content">
 
 
-    <h2>3. JSON Files and Content</h2>
+            <div class="intro">
 
-    <p>
-        JSON Studio is designed to process JSON files directly on your
-        device.
-    </p>
+                <p>
+                    This Privacy Policy applies specifically to the
+                    <strong>JSON Studio - View Edit Export</strong>
+                    Android application developed by
+                    <strong>VenzApps</strong>.
+                </p>
 
-    <p>
-        Your JSON files and their contents are not sent to VenzApps
-        servers or stored in cloud storage operated by VenzApps.
-    </p>
+                <p>
+                    Your privacy is important to us. This Privacy Policy
+                    explains what information JSON Studio handles, how it
+                    is used, and how your data is protected when you use
+                    the application.
+                </p>
 
-    <p>
-        You are responsible for the content of the files you open or
-        create using the application.
-    </p>
-
-
-    <h2>4. Advertising</h2>
-
-    <p>
-        JSON Studio uses Google AdMob to display advertisements.
-    </p>
-
-    <p>
-        Google AdMob may collect and use certain information for
-        advertising purposes. This may include information such as:
-    </p>
-
-    <ul>
-        <li>Advertising ID</li>
-        <li>Device information</li>
-        <li>Usage information</li>
-        <li>IP address</li>
-    </ul>
-
-    <p>
-        The information collected by Google may be used to provide,
-        measure, and improve advertising services.
-    </p>
-
-    <p>
-        For more information about how Google handles data, please
-        review Google's Privacy Policy:
-    </p>
-
-    <p>
-        <a href="https://policies.google.com/privacy"
-           target="_blank"
-           rel="noopener noreferrer">
-            Google Privacy Policy
-        </a>
-    </p>
+            </div>
 
 
-    <h2>5. Third-Party Services</h2>
+            <!-- 1 -->
 
-    <p>
-        JSON Studio uses Google AdMob for advertising.
-        We do not use other third-party analytics, tracking services,
-        or cloud storage services within the application.
-    </p>
+            <h2>
+                1. Information We Collect
+            </h2>
 
+            <p>
+                JSON Studio does not require you to create an account or
+                sign in. The application does not directly collect
+                personal information such as your name, phone number,
+                address, or contact details.
+            </p>
 
-    <h2>6. Data Security</h2>
-
-    <p>
-        JSON Studio processes JSON files locally on your Android device.
-        VenzApps does not receive or store your JSON file contents on
-        its own servers.
-    </p>
-
-    <p>
-        The security of locally stored information also depends on the
-        security of your Android device and operating system.
-    </p>
+            <p>
+                JSON files you open, create, edit, or process in
+                JSON Studio are processed locally on your Android device.
+                Your JSON files are not uploaded to our servers.
+            </p>
 
 
-    <h2>7. Data Retention and Deletion</h2>
+            <!-- 2 -->
 
-    <p>
-        Local application data remains on your device until it is
-        removed through the available application features or Android
-        system settings.
-    </p>
+            <h2>
+                2. Local App Data
+            </h2>
 
-    <p>
-        You can clear application data or uninstall JSON Studio through
-        your Android device settings to remove locally stored
-        application data.
-    </p>
+            <p>
+                JSON Studio may store certain information locally on
+                your device to provide its features.
+            </p>
 
+            <p>
+                This may include:
+            </p>
 
-    <h2>8. Your Choices</h2>
+            <ul>
 
-    <p>
-        You can choose which JSON files to open or create using the
-        application.
-    </p>
+                <li>
+                    Names of recently opened files
+                </li>
 
-    <p>
-        You can also remove locally stored application data through
-        the application's available settings or through Android system
-        settings.
-    </p>
+                <li>
+                    File URIs required to access recently used files
+                </li>
 
+                <li>
+                    Pasted JSON content stored in the application's
+                    private storage until cleared
+                </li>
 
-    <h2>9. Children's Privacy</h2>
+            </ul>
 
-    <p>
-        JSON Studio does not knowingly collect personal information from
-        children.
-    </p>
-
-    <p>
-        If you believe that a child has provided personal information
-        through the application, please contact us so that we can
-        address the concern.
-    </p>
+            <p>
+                This information is stored locally on your device and
+                is not uploaded to VenzApps servers.
+            </p>
 
 
-    <h2>10. Changes to This Privacy Policy</h2>
+            <!-- 3 -->
 
-    <p>
-        We may update this Privacy Policy from time to time to reflect
-        changes to the application, services, or applicable requirements.
-    </p>
+            <h2>
+                3. JSON Files and Content
+            </h2>
 
-    <p>
-        Any changes will be posted on this page with an updated
-        "Last Updated" date.
-    </p>
+            <p>
+                JSON Studio is designed to process JSON files directly
+                on your device.
+            </p>
 
+            <p>
+                Your JSON files and their contents are not sent to
+                VenzApps servers or stored in cloud storage operated
+                by VenzApps.
+            </p>
 
-    <h2>11. Contact Us</h2>
-
-    <p>
-        If you have questions, suggestions, or concerns regarding this
-        Privacy Policy or JSON Studio, please contact VenzApps by email:
-    </p>
-
-    <p>
-        <a href="mailto:venkat0899.dev@gmail.com">
-            venkat0899.dev@gmail.com
-        </a>
-    </p>
+            <p>
+                You are responsible for the content of the files you
+                open or create using the application.
+            </p>
 
 
-    <h2>12. Developer Information</h2>
+            <!-- 4 -->
 
-    <p>
-        <strong>Developer:</strong> VenzApps
-    </p>
+            <h2>
+                4. Advertising
+            </h2>
 
-    <p>
-        <strong>Application:</strong> JSON Studio - View Edit Export
-    </p>
+            <p>
+                JSON Studio uses Google AdMob to display advertisements.
+            </p>
+
+            <p>
+                Google AdMob may collect and use certain information for
+                advertising purposes. This may include information such as:
+            </p>
+
+            <ul>
+
+                <li>
+                    Advertising ID
+                </li>
+
+                <li>
+                    Device information
+                </li>
+
+                <li>
+                    Usage information
+                </li>
+
+                <li>
+                    IP address
+                </li>
+
+            </ul>
+
+            <p>
+                The information collected by Google may be used to
+                provide, measure, and improve advertising services.
+            </p>
+
+            <p>
+                For more information about how Google handles data,
+                please review Google's Privacy Policy:
+            </p>
+
+            <p>
+                <a href="https://policies.google.com/privacy"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Google Privacy Policy
+
+                </a>
+            </p>
 
 
-    <p>
-        This Privacy Policy applies only to the JSON Studio Android
-        application and does not automatically apply to other
-        applications developed by VenzApps.
-    </p>
+            <!-- 5 -->
+
+            <h2>
+                5. Third-Party Services
+            </h2>
+
+            <p>
+                JSON Studio uses Google AdMob for advertising.
+                We do not use other third-party analytics, tracking
+                services, or cloud storage services within the application.
+            </p>
+
+
+            <!-- 6 -->
+
+            <h2>
+                6. Data Security
+            </h2>
+
+            <p>
+                JSON Studio processes JSON files locally on your
+                Android device. VenzApps does not receive or store
+                your JSON file contents on its own servers.
+            </p>
+
+            <p>
+                The security of locally stored information also depends
+                on the security of your Android device and operating
+                system.
+            </p>
+
+
+            <!-- 7 -->
+
+            <h2>
+                7. Data Retention and Deletion
+            </h2>
+
+            <p>
+                Local application data remains on your device until it
+                is removed through the available application features
+                or Android system settings.
+            </p>
+
+            <p>
+                You can clear application data or uninstall JSON Studio
+                through your Android device settings to remove locally
+                stored application data.
+            </p>
+
+
+            <!-- 8 -->
+
+            <h2>
+                8. Your Choices
+            </h2>
+
+            <p>
+                You can choose which JSON files to open or create using
+                the application.
+            </p>
+
+            <p>
+                You can also remove locally stored application data
+                through the application's available settings or through
+                Android system settings.
+            </p>
+
+
+            <!-- 9 -->
+
+            <h2>
+                9. Children's Privacy
+            </h2>
+
+            <p>
+                JSON Studio does not knowingly collect personal
+                information from children.
+            </p>
+
+            <p>
+                If you believe that a child has provided personal
+                information through the application, please contact us
+                so that we can address the concern.
+            </p>
+
+
+            <!-- 10 -->
+
+            <h2>
+                10. Changes to This Privacy Policy
+            </h2>
+
+            <p>
+                We may update this Privacy Policy from time to time
+                to reflect changes to the application, services, or
+                applicable requirements.
+            </p>
+
+            <p>
+                Any changes will be posted on this page with an
+                updated "Last Updated" date.
+            </p>
+
+
+            <!-- 11 -->
+
+            <h2>
+                11. Contact Us
+            </h2>
+
+            <p>
+                If you have questions, suggestions, or concerns
+                regarding this Privacy Policy or JSON Studio,
+                please contact VenzApps by email:
+            </p>
+
+
+            <div class="contact-box">
+
+                <p>
+                    <strong>Email:</strong>
+                </p>
+
+                <p>
+                    <a href="mailto:venkat0899.dev@gmail.com">
+                        venkat0899.dev@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- 12 -->
+
+            <h2>
+                12. Developer Information
+            </h2>
+
+
+            <div class="developer-box">
+
+                <p>
+                    <strong>Developer:</strong>
+                    VenzApps
+                </p>
+
+                <p>
+                    <strong>Application:</strong>
+                    JSON Studio - View Edit Export
+                </p>
+
+            </div>
+
+
+            <p style="margin-top: 30px;">
+
+                This Privacy Policy applies only to the
+                <strong>JSON Studio</strong> Android application and
+                does not automatically apply to other applications
+                developed by VenzApps.
+
+            </p>
+
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            © 2026 VenzApps. All rights reserved.
+
+        </footer>
+
+
+    </div>
 
 
 </body>
