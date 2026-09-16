@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Privacy Policy - Text to PDF</title>
+
+    <meta
+        name="description"
+        content="Privacy Policy for Text to PDF - Create, edit and convert documents to PDF."
+    >
+
+    <style>
+        :root {
+            --primary: #0F9D92;
+            --primary-dark: #087A73;
+            --primary-light: #E8F8F6;
+            --primary-soft: #D5F1EE;
+
+            --background: #F8FBFB;
+            --white: #FFFFFF;
+
+            --text: #111827;
+            --text-secondary: #4B5563;
+            --text-muted: #6B7280;
+
+            --border: #E1E7E7;
+
+            --green: #159447;
+            --green-bg: #EAF8EF;
+
+            --blue: #2563EB;
+            --blue-bg: #EFF6FF;
+
+            --orange: #EA8A17;
+            --orange-bg: #FFF7E8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #F4FBFA 0%,
+                    #F8FBFB 45%,
+                    #FFFFFF 100%
+                );
+
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ================================
+           HEADER
+        ================================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background: rgba(255, 255, 255, 0.94);
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1120px;
+            height: 78px;
+
+            margin: 0 auto;
+            padding: 0 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            color: var(--text);
+            font-size: 24px;
+            font-weight: 800;
+
+            letter-spacing: -0.5px;
+        }
+
+        .brand:hover {
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 44px;
+            height: 44px;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #18B6AA,
+                    #0F9D92
+                );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-shadow:
+                0 7px 18px rgba(15, 157, 146, 0.22);
+        }
+
+        .logo svg {
+            width: 27px;
+            height: 27px;
+        }
+
+        .header-right {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        /* ================================
+           BACKGROUND DECORATION
+        ================================= */
+
+        .background-circle {
+            position: fixed;
+            z-index: -1;
+
+            pointer-events: none;
+
+            border-radius: 50%;
+
+            filter: blur(2px);
+        }
+
+        .circle-one {
+            width: 450px;
+            height: 450px;
+
+            top: -250px;
+            right: -200px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(15, 157, 146, 0.11),
+                    rgba(15, 157, 146, 0)
+                );
+        }
+
+        .circle-two {
+            width: 500px;
+            height: 500px;
+
+            bottom: -300px;
+            left: -250px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(74, 190, 181, 0.10),
+                    rgba(74, 190, 181, 0)
+                );
+        }
+
+        /* ================================
+           HERO
+        ================================= */
+
+        .hero {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding:
+                75px 24px
+                50px;
+
+            text-align: center;
+        }
+
+        .privacy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 8px 15px;
+
+            background: var(--primary-light);
+
+            border-radius: 999px;
+
+            color: var(--primary);
+
+            font-size: 13px;
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+        .privacy-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+        }
+
+        .hero h1 {
+            color: var(--primary-dark);
+
+            font-size: clamp(36px, 6vw, 54px);
+
+            line-height: 1.12;
+
+            letter-spacing: -1.7px;
+
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero-description {
+            max-width: 720px;
+
+            margin: 0 auto;
+
+            color: var(--text-secondary);
+
+            font-size: 17px;
+
+            line-height: 1.65;
+        }
+
+        .last-updated {
+            margin-top: 17px;
+
+            color: var(--text-muted);
+
+            font-size: 13px;
+        }
+
+        /* ================================
+           MAIN LAYOUT
+        ================================= */
+
+        .main {
+            max-width: 1120px;
+
+            margin: 0 auto;
+
+            padding:
+                10px 24px
+                80px;
+
+            display: grid;
+
+            grid-template-columns: 240px 1fr;
+
+            gap: 45px;
+        }
+
+        /* ================================
+           TABLE OF CONTENTS
+        ================================= */
+
+        .toc {
+            position: sticky;
+            top: 105px;
+
+            height: fit-content;
+
+            padding: 20px;
+
+            background: rgba(255, 255, 255, 0.85);
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 6px 20px rgba(15, 157, 146, 0.05);
+        }
+
+        .toc-title {
+            color: var(--primary-dark);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.8px;
+
+            margin-bottom: 12px;
+        }
+
+        .toc a {
+            display: block;
+
+            padding: 7px 9px;
+
+            margin: 2px 0;
+
+            border-radius: 8px;
+
+            color: var(--text-secondary);
+
+            font-size: 13px;
+
+            transition:
+                background .2s ease,
+                color .2s ease;
+        }
+
+        .toc a:hover {
+            background: var(--primary-light);
+
+            color: var(--primary);
+
+            text-decoration: none;
+        }
+
+        /* ================================
+           CONTENT CARD
+        ================================= */
+
+        .section {
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 7px 28px rgba(15, 157, 146, 0.045);
+        }
+
+        .section h2 {
+            color: var(--primary-dark);
+
+            font-size: 24px;
+
+            line-height: 1.3;
+
+            margin-bottom: 14px;
+
+            letter-spacing: -0.3px;
+        }
+
+        .section h3 {
+            color: var(--text);
+
+            font-size: 17px;
+
+            margin-top: 23px;
+
+            margin-bottom: 7px;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+
+            font-size: 15px;
+
+            margin-bottom: 13px;
+        }
+
+        .section ul {
+            margin:
+                10px 0
+                15px
+                20px;
+        }
+
+        .section li {
+            color: var(--text-secondary);
+
+            font-size: 15px;
+
+            margin-bottom: 8px;
+        }
+
+        .section strong {
+            color: var(--text);
+        }
+
+        /* ================================
+           HIGHLIGHT
+        ================================= */
+
+        .highlight {
+            margin: 20px 0;
+
+            padding: 20px;
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #F0FAF9,
+                    #E7F7F5
+                );
+
+            border: 1px solid #D0ECE9;
+        }
+
+        .highlight-title {
+            display: flex;
+            align-items: center;
+
+            gap: 9px;
+
+            color: var(--primary-dark);
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            margin-bottom: 7px;
+        }
+
+        .highlight p {
+            margin: 0;
+        }
+
+        /* ================================
+           INFORMATION GRID
+        ================================= */
+
+        .info-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 14px;
+
+            margin:
+                20px 0
+                25px;
+        }
+
+        .info-card {
+            padding: 18px;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #FFFFFF,
+                    #F7FBFA
+                );
+
+            border: 1px solid var(--border);
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background: var(--primary-light);
+
+            color: var(--primary);
+
+            font-size: 19px;
+
+            margin-bottom: 10px;
+        }
+
+        .info-card h3 {
+            margin: 0 0 5px;
+
+            font-size: 16px;
+        }
+
+        .info-card p {
+            margin: 0;
+
+            font-size: 13px;
+        }
+
+        /* ================================
+           SECURITY BOX
+        ================================= */
+
+        .security-box {
+            display: flex;
+
+            gap: 13px;
+
+            padding: 19px;
+
+            margin: 20px 0;
+
+            border-radius: 15px;
+
+            background: var(--green-bg);
+
+            border: 1px solid #CBEBD6;
+        }
+
+        .security-icon {
+            font-size: 22px;
+
+            flex-shrink: 0;
+        }
+
+        .security-box strong {
+            display: block;
+
+            color: #087D36;
+
+            margin-bottom: 4px;
+        }
+
+        .security-box p {
+            margin: 0;
+        }
+
+        /* ================================
+           FILE BOX
+        ================================= */
+
+        .file-box {
+            margin: 20px 0;
+
+            padding: 21px;
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #EFFAF9,
+                    #DDF4F1
+                );
+
+            border: 1px solid #CDEBE7;
+        }
+
+        .file-title {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            color: var(--primary-dark);
+
+            font-size: 17px;
+
+            font-weight: 700;
+
+            margin-bottom: 8px;
+        }
+
+        .file-box p {
+            margin: 0;
+        }
+
+        /* ================================
+           CONTACT
+        ================================= */
+
+        .contact {
+            text-align: center;
+
+            padding:
+                38px 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #EAF8F6,
+                    #D8F1EE
+                );
+
+            border-color: #CBE8E4;
+        }
+
+        .contact h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            max-width: 620px;
+
+            margin:
+                0 auto
+                20px;
+        }
+
+        .email-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding:
+                13px 22px;
+
+            border-radius: 12px;
+
+            background: var(--primary);
+
+            color: #FFFFFF;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            box-shadow:
+                0 7px 20px
+                rgba(15, 157, 146, 0.22);
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .email-button:hover {
+            color: white;
+
+            text-decoration: none;
+
+            transform: translateY(-1px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(15, 157, 146, 0.28);
+        }
+
+        /* ================================
+           FOOTER
+        ================================= */
+
+        footer {
+            background: #FFFFFF;
+
+            border-top:
+                1px solid var(--border);
+        }
+
+        .footer-inner {
+            max-width: 1120px;
+
+            margin: 0 auto;
+
+            padding:
+                32px 24px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .footer-brand {
+            color: var(--primary-dark);
+
+            font-weight: 700;
+
+            font-size: 14px;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+
+            font-size: 13px;
+        }
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 800px) {
+
+            .header-inner {
+                height: 68px;
+
+                padding:
+                    0 18px;
+            }
+
+            .brand {
+                font-size: 20px;
+            }
+
+            .header-right {
+                display: none;
+            }
+
+            .hero {
+                padding:
+                    55px 18px
+                    35px;
+            }
+
+            .hero h1 {
+                font-size: 37px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .main {
+                display: block;
+
+                padding:
+                    10px 16px
+                    60px;
+            }
+
+            .toc {
+                position: static;
+
+                margin-bottom: 22px;
+            }
+
+            .toc a {
+                display: inline-block;
+            }
+
+            .section {
+                padding:
+                    23px 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+
+            .brand {
+                font-size: 19px;
+            }
+
+            .hero h1 {
+                font-size: 33px;
+            }
+
+            .section h2 {
+                font-size: 21px;
+            }
+
+            .section p,
+            .section li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header>
+
+        <div class="header-inner">
+
+            <a href="#" class="brand">
+
+                <div class="logo">
+
+                    <!-- Document / PDF icon -->
+
+                    <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                        <path
+                            d="M11 5H28L37 14V42H11V5Z"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M28 5V15H37"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M17 23H31"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M17 30H31"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M17 37H26"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+                Text to PDF
+
+            </a>
+
+            <div class="header-right">
+                Privacy & Security
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         HERO
+    ================================= -->
+
+    <section class="hero">
+
+        <div class="privacy-badge">
+
+            <span class="privacy-dot"></span>
+
+            Privacy & Security
+
+        </div>
+
+
+        <h1>
+            Privacy Policy for
+            <span>Text to PDF</span>
+        </h1>
+
+
+        <p class="hero-description">
+
+            Text to PDF is designed to help you create, edit,
+            manage, and convert text documents into professional
+            PDF files while keeping your document workflow simple.
+
+        </p>
+
+
+        <div class="last-updated">
+
+            Last updated: September 16, 2026
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         MAIN
+    ================================= -->
+
+    <main class="main">
+
+
+        <!-- TABLE OF CONTENTS -->
+
+        <aside class="toc">
+
+            <div class="toc-title">
+                On this page
+            </div>
+
+            <a href="#introduction">
+                Introduction
+            </a>
+
+            <a href="#collection">
+                Information We Collect
+            </a>
+
+            <a href="#documents">
+                Documents & Files
+            </a>
+
+            <a href="#permissions">
+                Permissions
+            </a>
+
+            <a href="#storage">
+                Local Storage
+            </a>
+
+            <a href="#advertising">
+                Advertising
+            </a>
+
+            <a href="#third-party">
+                Third-Party Services
+            </a>
+
+            <a href="#security">
+                Security
+            </a>
+
+            <a href="#retention">
+                Data Retention
+            </a>
+
+            <a href="#children">
+                Children's Privacy
+            </a>
+
+            <a href="#choices">
+                Your Choices
+            </a>
+
+            <a href="#changes">
+                Changes
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </aside>
+
+
+        <!-- CONTENT -->
+
+        <div>
+
+
+            <!-- ================================
+                 1. INTRODUCTION
+            ================================= -->
+
+            <section
+                class="section"
+                id="introduction"
+            >
+
+                <h2>
+                    1. Introduction
+                </h2>
+
+                <p>
+
+                    Welcome to
+                    <strong>Text to PDF</strong>
+                    ("Text to PDF", "we", "our", or "us").
+
+                </p>
+
+                <p>
+
+                    Text to PDF is an Android application that allows
+                    users to create and edit text documents, format
+                    content, manage documents, preview PDF output,
+                    and convert documents into PDF files.
+
+                </p>
+
+                <p>
+
+                    This Privacy Policy explains what information
+                    the application may access, how information is
+                    used, and how your information is handled.
+
+                </p>
+
+
+                <div class="highlight">
+
+                    <div class="highlight-title">
+
+                        <span>🔒</span>
+
+                        Privacy-focused document workflow
+
+                    </div>
+
+                    <p>
+
+                        Your documents are primarily handled on your
+                        device. Text to PDF does not require you to
+                        upload your document content to a server in
+                        order to create or convert a PDF.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================
+                 2. INFORMATION COLLECTION
+            ================================= -->
+
+            <section
+                class="section"
+                id="collection"
+            >
+
+                <h2>
+                    2. Information We Collect
+                </h2>
+
+                <p>
+
+                    Text to PDF is designed to minimize the
+                    information required to provide its core
+                    document creation and PDF conversion features.
+
+                </p>
+
+
+                <div class="info-grid">
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            📄
+                        </div>
+
+                        <h3>
+                            Document Content
+                        </h3>
+
+                        <p>
+
+                            Text and document content that you create,
+                            edit, or open in the application may be
+                            processed on your device to provide the
+                            editing and PDF conversion features.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            📁
+                        </div>
+
+                        <h3>
+                            Files
+                        </h3>
+
+                        <p>
+
+                            The application may access files that you
+                            choose to open, import, save, or export
+                            through the Android file system.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            App Settings
+                        </h3>
+
+                        <p>
+
+                            Application preferences and settings may
+                            be stored locally on your device to
+                            remember your selected options.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Advertising Information
+                        </h3>
+
+                        <p>
+
+                            If advertisements are displayed, advertising
+                            providers may collect information as
+                            described in their applicable privacy
+                            policies and settings.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <h3>
+                    Information We Do Not Intentionally Collect
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Your passwords or authentication credentials.
+                    </li>
+
+                    <li>
+                        The contents of unrelated personal files.
+                    </li>
+
+                    <li>
+                        Your messages or emails.
+                    </li>
+
+                    <li>
+                        Your contacts.
+                    </li>
+
+                    <li>
+                        Your web browsing history.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- ================================
+                 3. DOCUMENTS
+            ================================= -->
+
+            <section
+                class="section"
+                id="documents"
+            >
+
+                <h2>
+                    3. Documents & Files
+                </h2>
+
+                <p>
+
+                    Text to PDF allows you to create, edit, open,
+                    save, and convert documents.
+
+                </p>
+
+                <div class="file-box">
+
+                    <div class="file-title">
+
+                        <span>📄</span>
+
+                        Your documents stay under your control
+
+                    </div>
+
+                    <p>
+
+                        Documents that you create or open are processed
+                        by the application to provide editing,
+                        formatting, preview, and PDF generation
+                        functionality.
+
+                    </p>
+
+                </div>
+
+                <p>
+
+                    When you choose to open or save a file using
+                    Android's file picker or storage system, the
+                    application may receive access to the specific
+                    file or location that you select.
+
+                </p>
+
+                <p>
+
+                    Text to PDF does not intentionally upload your
+                    document content to a Text to PDF-operated remote
+                    server for normal document editing or PDF
+                    generation.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 4. PERMISSIONS
+            ================================= -->
+
+            <section
+                class="section"
+                id="permissions"
+            >
+
+                <h2>
+                    4. Permissions
+                </h2>
+
+                <p>
+
+                    Text to PDF requests Android permissions only
+                    when they are required to provide an application
+                    feature.
+
+                </p>
+
+
+                <h3>
+                    File Access
+                </h3>
+
+                <p>
+
+                    File access may be required when you choose to
+                    open, import, save, or export documents through
+                    Android's file system.
+
+                </p>
+
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <p>
+
+                    If notification functionality is implemented and
+                    enabled, notification permission may be used to
+                    provide relevant application notifications.
+
+                </p>
+
+
+                <h3>
+                    Other Permissions
+                </h3>
+
+                <p>
+
+                    The application may request additional permissions
+                    if required for specific features introduced in
+                    future versions.
+
+                </p>
+
+                <p>
+
+                    You can manage application permissions through
+                    Android system settings.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 5. LOCAL STORAGE
+            ================================= -->
+
+            <section
+                class="section"
+                id="storage"
+            >
+
+                <h2>
+                    5. Local Storage
+                </h2>
+
+                <p>
+
+                    Text to PDF may store application data and
+                    document information locally on your device.
+
+                </p>
+
+                <p>
+                    Locally stored information may include:
+                </p>
+
+                <ul>
+
+                    <li>
+                        Documents created within the application.
+                    </li>
+
+                    <li>
+                        Document names and metadata.
+                    </li>
+
+                    <li>
+                        Application preferences.
+                    </li>
+
+                    <li>
+                        Editor settings.
+                    </li>
+
+                    <li>
+                        Other information required for the application's
+                        normal operation.
+                    </li>
+
+                </ul>
+
+
+                <div class="security-box">
+
+                    <div class="security-icon">
+                        🔐
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Local-first document processing
+                        </strong>
+
+                        <p>
+
+                            Core document editing and PDF generation
+                            functionality is designed to operate
+                            locally on your Android device.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================
+                 6. ADVERTISING
+            ================================= -->
+
+            <section
+                class="section"
+                id="advertising"
+            >
+
+                <h2>
+                    6. Advertising
+                </h2>
+
+                <p>
+
+                    Text to PDF may display advertisements to support
+                    the continued development and availability of
+                    the application.
+
+                </p>
+
+                <p>
+
+                    The application may use
+                    <strong>Google AdMob</strong>
+                    to display advertisements.
+
+                </p>
+
+                <p>
+
+                    Google and its advertising partners may process
+                    information such as advertising identifiers,
+                    device information, approximate location,
+                    diagnostics, and interactions with advertisements,
+                    depending on the applicable configuration,
+                    consent choices, and regional requirements.
+
+                </p>
+
+
+                <div class="highlight">
+
+                    <div class="highlight-title">
+
+                        <span>📢</span>
+
+                        Advertising privacy
+
+                    </div>
+
+                    <p>
+
+                        Advertising-related information is processed
+                        by the applicable advertising provider under
+                        its own privacy policy, terms, and applicable
+                        consent requirements.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================
+                 7. THIRD PARTY
+            ================================= -->
+
+            <section
+                class="section"
+                id="third-party"
+            >
+
+                <h2>
+                    7. Third-Party Services
+                </h2>
+
+                <p>
+
+                    Text to PDF may rely on third-party services
+                    to provide certain application functionality,
+                    advertising, distribution, analytics, or
+                    supporting services.
+
+                </p>
+
+                <p>
+                    These services may include:
+                </p>
+
+                <ul>
+
+                    <li>
+                        Google Play Services
+                    </li>
+
+                    <li>
+                        Google AdMob
+                    </li>
+
+                </ul>
+
+                <p>
+
+                    Third-party services may process information
+                    according to their own privacy policies and
+                    applicable terms.
+
+                </p>
+
+                <p>
+
+                    We recommend reviewing the privacy policies
+                    of the applicable third-party providers for
+                    additional information about their data
+                    practices.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 8. SECURITY
+            ================================= -->
+
+            <section
+                class="section"
+                id="security"
+            >
+
+                <h2>
+                    8. Security
+                </h2>
+
+                <p>
+
+                    We take reasonable measures to protect information
+                    associated with Text to PDF.
+
+                </p>
+
+                <p>
+
+                    The application is designed so that its core
+                    document editing and PDF generation operations
+                    can be performed locally on your device.
+
+                </p>
+
+
+                <div class="security-box">
+
+                    <div class="security-icon">
+                        🛡️
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Device-based document processing
+                        </strong>
+
+                        <p>
+
+                            Normal document creation, editing,
+                            formatting, and PDF generation do not
+                            require sending your document content
+                            to a Text to PDF remote server.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    However, no method of electronic storage or
+                    transmission can be guaranteed to be completely
+                    secure.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 9. DATA RETENTION
+            ================================= -->
+
+            <section
+                class="section"
+                id="retention"
+            >
+
+                <h2>
+                    9. Data Retention & Deletion
+                </h2>
+
+                <p>
+
+                    Documents and application information stored
+                    locally generally remain on your device until
+                    you delete or modify them, clear the application's
+                    data, or uninstall the application.
+
+                </p>
+
+                <p>
+
+                    You can manage your documents through the
+                    application's available document management
+                    features.
+
+                </p>
+
+                <p>
+
+                    Uninstalling Text to PDF generally removes the
+                    application's local data according to Android's
+                    standard application behavior.
+
+                </p>
+
+                <p>
+
+                    Information processed by third-party services,
+                    including advertising providers, may be retained
+                    according to those providers' respective policies.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 10. CHILDREN
+            ================================= -->
+
+            <section
+                class="section"
+                id="children"
+            >
+
+                <h2>
+                    10. Children's Privacy
+                </h2>
+
+                <p>
+
+                    Text to PDF does not intentionally collect
+                    personal information from children in violation
+                    of applicable privacy laws.
+
+                </p>
+
+                <p>
+
+                    If you believe that personal information has
+                    been provided to us inappropriately, please
+                    contact us using the email address provided
+                    below.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 11. USER CHOICES
+            ================================= -->
+
+            <section
+                class="section"
+                id="choices"
+            >
+
+                <h2>
+                    11. Your Choices
+                </h2>
+
+                <p>
+
+                    You have control over several aspects of
+                    Text to PDF and the information handled by
+                    the application.
+
+                </p>
+
+                <ul>
+
+                    <li>
+                        Create, edit, save, and delete your documents.
+                    </li>
+
+                    <li>
+                        Choose which files the application can access
+                        through Android's file picker.
+                    </li>
+
+                    <li>
+                        Manage application permissions through
+                        Android settings.
+                    </li>
+
+                    <li>
+                        Manage notifications through Android settings,
+                        where applicable.
+                    </li>
+
+                    <li>
+                        Delete application data through Android settings.
+                    </li>
+
+                    <li>
+                        Uninstall Text to PDF at any time.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- ================================
+                 12. CHANGES
+            ================================= -->
+
+            <section
+                class="section"
+                id="changes"
+            >
+
+                <h2>
+                    12. Changes to This Privacy Policy
+                </h2>
+
+                <p>
+
+                    We may update this Privacy Policy from time to
+                    time to reflect changes to Text to PDF, its
+                    features, applicable laws, or our privacy
+                    practices.
+
+                </p>
+
+                <p>
+
+                    When this policy is updated, the
+                    <strong>"Last updated"</strong>
+                    date at the top of this page will also be
+                    updated.
+
+                </p>
+
+                <p>
+
+                    We encourage you to periodically review this
+                    page for the latest information about our
+                    privacy practices.
+
+                </p>
+
+            </section>
+
+
+            <!-- ================================
+                 13. CONTACT
+            ================================= -->
+
+            <section
+                class="section contact"
+                id="contact"
+            >
+
+                <h2>
+                    13. Contact Us
+                </h2>
+
+                <p>
+
+                    If you have questions, concerns, or requests
+                    regarding this Privacy Policy or Text to PDF's
+                    privacy practices, please contact us.
+
+                </p>
+
+
+                <a
+                    class="email-button"
+                    href="mailto:venzapps.support@gmail.com"
+                >
+
+                    ✉ Contact Text to PDF
+
+                </a>
+
+                <p style="margin-top: 15px; margin-bottom: 0;">
+
+                    venzapps.support@gmail.com
+
+                </p>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                📄 Text to PDF
+
+            </div>
+
+            <div class="footer-copy">
+
+                © 2026 VenzApps. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
